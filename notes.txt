@@ -1,0 +1,7 @@
+TODO
+- Detect on key up even on input textbox
+- Attach the AJAX Handler
+- Implement the AJAX Handler
+- Create dummy database to store data
+- Populate #result with search result 
+- Style the page
