@@ -18,13 +18,18 @@ textBox.onkeyup = function(){
 
 function searchForData(value, isLoadMoreMode){
     // If an Ajax request is previously sent, it will be aborted because it isn't useful anymore.
-    // if(ajax && typeof ajax.abort === "function"){
-    //     ajax.abort();
-    // }
+    if(ajax && typeof ajax.abort === "function"){
+        ajax.abort();
+    }
 
     if(isLoadMoreMode !== true){
-        console.log("False");
+        clearResult();
     }
-    else
-        console.log("True");
+
+    ajax = new XMLHttpRequest();
+    ajax.onreadystatechange = function(){
+        
+    }
+
+
 }
